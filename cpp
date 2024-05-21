@@ -84,6 +84,7 @@ void menuChoice(int choice) {
         cin >> studentMarks;
 
         s1.updateGrade(studentMarks);
+        s1.calculateGPA();
 
     }
 
@@ -189,5 +190,4 @@ int main() {
     }
 
 }
-
 
