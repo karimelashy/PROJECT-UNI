@@ -130,7 +130,7 @@ protected:
 
     float grades;//grades for each course 
 
-    int gpa;
+    float gpa;
 
 
 
@@ -142,9 +142,13 @@ public:
 
     {
 
-        cout << "ENTER COURSE TO ENROLL STUDENT IN ";
+        cout << "ENTER COURSE TO ENROLL STUDENT IN " << endl;
+        for (int i = 0; i < 3; i++)
+        {
+            cin >> CoursesEnrolled;
+        };
 
-        cin >> CoursesEnrolled;
+       
 
     }
 
@@ -173,6 +177,7 @@ public:
         gpa = grades / 6;
 
     }
+
 
     void updateGrade(int marks)
 
@@ -215,6 +220,7 @@ public:
         }
 
     }
+    
 
 
 
@@ -226,13 +232,7 @@ public:
 
 
 
-
-
-
-
-
-
-class AcademicStaff : public student
+class AcademicStaff : protected student
 
 {
 
@@ -284,7 +284,7 @@ public:
 
         {
 
-            cout << studentname;
+            cout <<" student name " << studentname;
 
         }
 
